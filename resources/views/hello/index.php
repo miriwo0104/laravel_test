@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1>Index</h1>
-    <P>This is a sample page with php-template</P>
+    <P><?php echo $msg; ?></P>
+    <p><?php echo date("Y年n月j日"); ?></p>
 </body>
 </html>
