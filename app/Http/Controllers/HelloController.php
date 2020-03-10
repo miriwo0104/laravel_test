@@ -6,13 +6,8 @@ use Illuminate\Http\Request;
 
 class HelloController extends Controller
 {
-    public function __invoke() {
-        return <<<EOF
-        <html>
-        <body>
-        <p>これはシングルアクションコントローラのアクションです</p>
-        </body>
-        </html>
-        EOF;
+    public function index() {
+        $date = ['msg'=>'これはコントローラから渡されたメッセージです。'];
+        return view('hello.index', $date);
     }
 }
