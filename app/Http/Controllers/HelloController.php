@@ -6,21 +6,11 @@ use Illuminate\Http\Request;
 
 class HelloController extends Controller
 {
-    public function index() {
+    public function __invoke() {
         return <<<EOF
         <html>
         <body>
-        <p>これはHelloコントローラのIndexアクションです</p>
-        </body>
-        </html>
-        EOF;
-    }
-
-    public function other() {
-        return <<<EOF
-        <html>
-        <body>
-        <p>これはHelloコントローラのOhterアクションです</p>
+        <p>これはシングルアクションコントローラのアクションです</p>
         </body>
         </html>
         EOF;
