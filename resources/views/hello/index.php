@@ -9,7 +9,8 @@
 </head>
 <body>
     <h1>Index</h1>
-    <P><?php echo $msg; ?></P>
+    <P><?php echo $msg_1; ?></P>
+    <P><?php echo $msg_2; ?></P>
     <p><?php echo date("Y年n月j日"); ?></p>
 </body>
 </html>
